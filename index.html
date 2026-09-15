@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReNourish - Food Recycling & Circular Economy Platform</title>
+  <meta name="description" content="Empowering individuals, restaurants, and cities to solve food waste through smart redistribution, upcycling, composting, and bioenergy conversion.">
+  
+  <!-- CSS Stylesheets & Fonts -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Dynamic Ambient Glow Containers -->
+  <div class="bg-glow-container">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        ReNourish
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#problem" class="nav-link">The Problem</a></li>
+        <li><a href="#pathways" class="nav-link">Recycling Pathways</a></li>
+        <li><a href="#calculator" class="nav-link">Impact Calculator</a></li>
+        <li><a href="#scrap-saver" class="nav-link">Scrap Saver AI</a></li>
+        <li><a href="#community" class="nav-link">Surplus Exchange</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggleBtn" title="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-primary" id="openPledgeBtn">
+          <i class="fa-solid fa-hand-holding-heart"></i> Take Pledge
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-recycle"></i> Circular Food Systems Initiative
+        </div>
+        <h1 class="hero-title">
+          Transforming <span class="gradient-text">Food Surplus</span> into Renewable Life.
+        </h1>
+        <p class="hero-subtitle">
+          Over 1.3 billion tons of food are discarded each year. ReNourish connects surplus meals, organic scraps, and commercial waste to redistribution banks, high-tech composting, upcycling, and clean bioenergy.
+        </p>
+        <div class="hero-cta">
+          <a href="#calculator" class="btn btn-primary">
+            <i class="fa-solid fa-calculator"></i> Calculate Impact
+          </a>
+          <a href="#pathways" class="btn btn-secondary">
+            <i class="fa-solid fa-compass"></i> Explore Pathways
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/hero.jpg" alt="Circular Food Recycling & Ecosystem">
+        </div>
+        <div class="glass-card floating-stat-badge">
+          <div class="stat-icon">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number">1.3 Billion</div>
+            <div class="stat-label">Tons Wasted Annually</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Problem Statement & Data Dashboard -->
+  <section id="problem" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Problem Statement</span>
+        <h2 class="section-title">The Global Food Waste Crisis</h2>
+        <p class="section-desc">
+          Food waste isn't just an inefficiency; it is an environmental disaster. When organic food decays in landfills, it releases potent methane gas, wasting land, water, labor, and fuel.
+        </p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="glass-card metric-card">
+          <div class="metric-value">33%</div>
+          <div class="metric-title">Global Food Wasted</div>
+          <div class="metric-sub">One-third of all food produced is never eaten</div>
+        </div>
+
+        <div class="glass-card metric-card">
+          <div class="metric-value">8 - 10%</div>
+          <div class="metric-title">Global GHG Emissions</div>
+          <div class="metric-sub">Attributable directly to unmanaged food waste</div>
+        </div>
+
+        <div class="glass-card metric-card">
+          <div class="metric-value">$1 Trillion</div>
+          <div class="metric-title">Economic Loss</div>
+          <div class="metric-sub">Annual financial value squandered globally</div>
+        </div>
+
+        <div class="glass-card metric-card">
+          <div class="metric-value">4.4 Gt</div>
+          <div class="metric-title">CO₂ Footprint</div>
+          <div class="metric-sub">Equivalent greenhouse gas burden annually</div>
+        </div>
+      </div>
+
+      <!-- Linear vs. Circular Comparison -->
+      <div class="glass-card comparison-box">
+        <h3 style="text-align: center; margin-bottom: 24px; font-size: 1.6rem;">
+          Linear Waste Model vs. ReNourish Circular Loop
+        </h3>
+        <div class="comparison-grid">
+          <div class="path-card bad">
+            <div class="path-header">
+              <i class="fa-solid fa-trash-can" style="color:#ef4444; font-size: 1.5rem;"></i>
+              <h3>The Traditional Landfill Trajectory</h3>
+            </div>
+            <ul class="path-list">
+              <li>Surplus meals discarded in trash bins</li>
+              <li>Anaerobic decomposition in landfills generating toxic Methane (CH₄)</li>
+              <li>Complete loss of valuable soil nutrients and embodied water</li>
+              <li>Financial burden of municipal waste haulage & landfill fees</li>
+            </ul>
+          </div>
+
+          <div class="path-card good">
+            <div class="path-header">
+              <i class="fa-solid fa-arrows-spin" style="color:#10b981; font-size: 1.5rem;"></i>
+              <h3>The Circular Recycling Ecosystem</h3>
+            </div>
+            <ul class="path-list">
+              <li>Immediate surplus routing to human hunger relief shelters</li>
+              <li>Inedible peels & scraps upcycled into protein feed or bio-materials</li>
+              <li>Organic waste diverted to Anaerobic Digestion for clean Biogas & Energy</li>
+              <li>Nutrient-rich digestate returned to farm soil as humic fertilizer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Recycling Pathways Hub -->
+  <section id="pathways" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Solution Pathways</span>
+        <h2 class="section-title">How Food Can Be Recycled</h2>
+        <p class="section-desc">
+          Food waste is not homogeneous. Explore the EPA Food Recovery Hierarchy pathways designed to maximize resource value.
+        </p>
+      </div>
+
+      <div class="hub-filters">
+        <button class="filter-btn active" data-filter="all">All Pathways</button>
+        <button class="filter-btn" data-filter="donation">Human Rescue</button>
+        <button class="filter-btn" data-filter="upcycling">Upcycling & Materials</button>
+        <button class="filter-btn" data-filter="composting">Composting</button>
+        <button class="filter-btn" data-filter="bioenergy">Bioenergy</button>
+      </div>
+
+      <div class="pathways-grid" id="pathwaysGrid">
+        <!-- Dynamically injected via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Calculators & Matchmaker Section -->
+  <section id="calculator" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Tools</span>
+        <h2 class="section-title">Calculate & Match Your Impact</h2>
+        <p class="section-desc">
+          Estimate environmental savings from food waste diversion and locate the nearest processing partner.
+        </p>
+      </div>
+
+      <div class="interactive-section-grid">
+        <!-- Impact Calculator Card -->
+        <div class="glass-card calculator-card">
+          <h3 style="margin-bottom: 20px; font-size: 1.5rem; color: var(--accent-mint);">
+            <i class="fa-solid fa-calculator"></i> Food Waste Impact Calculator
+          </h3>
+          
+          <div class="form-group">
+            <label class="form-label" for="calcWeight">Surplus / Waste Weight (kg)</label>
+            <input type="number" id="calcWeight" class="form-input" value="25" min="1" max="10000">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="calcCategory">Food Category</label>
+            <select id="calcCategory" class="form-select">
+              <option value="2.5">Mixed Prepared / Cooked Food</option>
+              <option value="1.5">Fresh Fruits & Vegetables</option>
+              <option value="1.8">Bakery & Grains</option>
+              <option value="3.2">Dairy & Meat Products</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="calcFrequency">Frequency</label>
+            <select id="calcFrequency" class="form-select">
+              <option value="1">One-time batch</option>
+              <option value="7">Weekly recurring</option>
+              <option value="30">Monthly total</option>
+              <option value="365">Annual impact</option>
+            </select>
+          </div>
+
+          <div class="results-display">
+            <div class="result-row">
+              <span>CO₂ Emissions Saved:</span>
+              <span class="result-val" id="resCo2">112.5 kg CO₂e</span>
+            </div>
+            <div class="result-row">
+              <span>Virtual Water Saved:</span>
+              <span class="result-val" id="resWater">30,000 Liters</span>
+            </div>
+            <div class="result-row">
+              <span>Clean Biogas Energy:</span>
+              <span class="result-val" id="resEnergy">21.3 kWh</span>
+            </div>
+            <div class="result-row">
+              <span>Rescued Meals Equivalent:</span>
+              <span class="result-val" id="resMeals">60 Meals</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Recycler Matchmaker Card -->
+        <div class="glass-card matchmaker-card">
+          <h3 style="margin-bottom: 20px; font-size: 1.5rem; color: var(--accent-lime);">
+            <i class="fa-solid fa-location-dot"></i> Smart Recycler Matchmaker
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">
+            Find the optimal recycling facility or food bank based on your waste stream characteristics.
+          </p>
+
+          <form id="matchmakerForm">
+            <div class="form-group">
+              <label class="form-label" for="matchType">Food Waste Stream</label>
+              <select id="matchType" class="form-select">
+                <option value="cooked">Cooked Surplus Meals (Edible)</option>
+                <option value="organic">Raw Organic Scraps & Peels</option>
+                <option value="bakery">Bakery & Spent Grain Surplus</option>
+                <option value="grounds">Coffee Grounds & Fruit Pulp</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="matchQty">Approximate Quantity (kg)</label>
+              <input type="number" id="matchQty" class="form-input" value="15">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-bullseye"></i> Find Nearest Partner Facility
+            </button>
+          </form>
+
+          <div id="matchResults" style="margin-top: 24px;">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zero Waste Recipe Assistant -->
+  <section id="scrap-saver" class="section">
+    <div class="container">
+      <div class="glass-card recipe-box">
+        <div class="section-header" style="margin-bottom: 30px;">
+          <span class="section-tag">Zero Waste Kitchen Assistant</span>
+          <h2 class="section-title">Leftover Ingredient & Scrap Saver</h2>
+          <p class="section-desc">
+            Select what leftovers or scraps you have in your fridge to generate upcycled culinary ideas and eco home tips.
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 16px; font-weight: 600; font-size: 0.9rem;">
+          Tap available items:
+        </div>
+
+        <div class="ingredient-chips" style="justify-content: center;">
+          <button class="chip-btn" data-ingredient="bananas"><i class="fa-solid fa-banana"></i> Overripe Bananas</button>
+          <button class="chip-btn" data-ingredient="bread"><i class="fa-solid fa-bread-slice"></i> Stale Bread</button>
+          <button class="chip-btn" data-ingredient="peels"><i class="fa-solid fa-carrot"></i> Veggie & Potato Peels</button>
+          <button class="chip-btn" data-ingredient="coffee"><i class="fa-solid fa-mug-hot"></i> Spent Coffee Grounds</button>
+          <button class="chip-btn" data-ingredient="citrus"><i class="fa-solid fa-lemon"></i> Lemon/Orange Rinds</button>
+          <button class="chip-btn" data-ingredient="milk"><i class="fa-solid fa-cow"></i> Sour Milk / Cream</button>
+        </div>
+
+        <div style="text-align: center; margin-top: 24px;">
+          <button class="btn btn-primary" id="findRecipeBtn">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Upcycled Recipe
+          </button>
+        </div>
+
+        <div id="recipeOutputCard" class="recipe-output-card" style="max-width: 680px; margin: 24px auto 0 auto;">
+          <p style="text-align: center; color: var(--text-muted);">Select ingredients above and click generate to get started.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Surplus Exchange Community Board -->
+  <section id="community" class="section">
+    <div class="container">
+      <div class="glass-card community-board">
+        <div class="section-header" style="margin-bottom: 30px;">
+          <span class="section-tag">Peer-to-Peer Exchange</span>
+          <h2 class="section-title">Community Surplus Marketplace</h2>
+          <p class="section-desc">
+            Post surplus food items or request organic compost scraps from nearby neighbors and local businesses.
+          </p>
+        </div>
+
+        <!-- Add New Listing Form -->
+        <form id="postListingForm" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 12px; margin-bottom: 30px;">
+          <input type="text" id="postTitle" class="form-input" placeholder="Item description (e.g. 10 kg excess apples)" required>
+          <select id="postType" class="form-select">
+            <option value="surplus">Surplus Food</option>
+            <option value="compost">Compost Scraps</option>
+          </select>
+          <input type="text" id="postQty" class="form-input" placeholder="Qty (e.g. 10 kg)" required>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Post Listing</button>
+        </form>
+
+        <div class="listings-grid" id="listingsGrid">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Pledge Modal -->
+  <div class="modal-overlay" id="pledgeModal">
+    <div class="glass-card modal-content">
+      <button class="modal-close" id="closeModalBtn">&times;</button>
+      <h3 style="font-size: 1.6rem; color: var(--accent-mint); margin-bottom: 12px; font-family: 'Outfit';">
+        Take the Zero Waste Food Pledge
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">
+        Join thousands of sustainable champions committing to zero edible food waste and circular organic recycling.
+      </p>
+
+      <form id="pledgeForm">
+        <div class="form-group">
+          <label class="form-label" for="pledgeName">Your Name or Organization</label>
+          <input type="text" id="pledgeName" class="form-input" placeholder="e.g. Alex Rivera / Green Bistro" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fa-solid fa-certificate"></i> Generate My Official Badge
+        </button>
+      </form>
+
+      <div id="certContainer">
+        <!-- Generated certificate appears here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <div class="brand-icon"><i class="fa-solid fa-leaf"></i></div>
+            ReNourish
+          </a>
+          <p>
+            Closing the loop on food waste through intelligent redistribution, upcycling, composting, and bioenergy conversion.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#problem">The Problem</a></li>
+            <li><a href="#pathways">Recycling Pathways</a></li>
+            <li><a href="#calculator">Impact Calculator</a></li>
+            <li><a href="#scrap-saver">Scrap Saver AI</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Recycling Hubs</h4>
+          <ul class="footer-links">
+            <li><a href="#">Food Rescue Banks</a></li>
+            <li><a href="#">Anaerobic Digesters</a></li>
+            <li><a href="#">Vermicompost Sites</a></li>
+            <li><a href="#">Upcycling Labs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Standards</h4>
+          <ul class="footer-links">
+            <li><a href="#">EPA Recovery Hierarchy</a></li>
+            <li><a href="#">UN SDG 12.3 Target</a></li>
+            <li><a href="#">Methane Reduction</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 ReNourish Platform. Built for Zero Waste & Circular Economy Advancement.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
